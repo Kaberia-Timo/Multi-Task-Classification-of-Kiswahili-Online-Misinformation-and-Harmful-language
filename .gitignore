@@ -91,7 +91,7 @@ huggingface/
 # ==========================================================
 
 data/raw/politikweli/*.csv
-data/raw/afrihate/*.csv
+#data/raw/afrihate/*.csv
 
 # Keep README files in raw folders
 
