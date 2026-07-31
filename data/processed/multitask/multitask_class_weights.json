@@ -1,0 +1,28 @@
+{
+    "misinformation_task": {
+        "task_type": "binary",
+        "label_mapping": {
+            "non_misinformation": 0,
+            "misinformation": 1
+        },
+        "class_weights": {
+            "0": 0.588863,
+            "1": 3.313333
+        },
+        "computed_from": "multi-task training split only"
+    },
+    "hate_speech_task": {
+        "task_type": "three_class",
+        "label_mapping": {
+            "normal": 0,
+            "abuse": 1,
+            "hate": 2
+        },
+        "class_weights": {
+            "0": 0.772386,
+            "1": 0.844032,
+            "2": 1.921151
+        },
+        "computed_from": "multi-task training split only"
+    }
+}

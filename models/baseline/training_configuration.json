@@ -1,0 +1,18 @@
+{
+    "model_name": "xlm-roberta-base",
+    "device": "cuda",
+    "seed": 42,
+    "max_length": 128,
+    "batch_size": 8,
+    "eval_batch_size": 16,
+    "num_epochs": 4,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "grad_accum_steps": 2,
+    "balance_sources": true,
+    "best_epoch": 4,
+    "best_val_avg_macro_f1": 0.7459101808175603,
+    "validation_metrics_path": "/content/drive/MyDrive/PolitikWeli_Data/multitask_model_outputs/validation_metrics.json",
+    "test_metrics_path": "/content/drive/MyDrive/PolitikWeli_Data/multitask_model_outputs/test_metrics.json"
+}

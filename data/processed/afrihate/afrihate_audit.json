@@ -1,0 +1,42 @@
+{
+    "raw_records": 21092,
+    "valid_after_missing_filter": 21092,
+    "empty_clean_texts_removed": 0,
+    "unmapped_label_rows_removed": 0,
+    "politikweli_overlap_counts": {
+        "master": 1,
+        "train": 0,
+        "validation": 0,
+        "test": 1
+    },
+    "purged_overlap_with_any_politikweli_split": 1,
+    "conflicting_label_rows_dropped": 125,
+    "exact_duplicate_rows_dropped": 1687,
+    "duplicate_ids_dropped": 0,
+    "language_profile_is_descriptive_only": true,
+    "language_profile_used_as_hard_filter": false,
+    "final_records": 19279,
+    "label_mapping": {
+        "normal": 0,
+        "abuse": 1,
+        "hate": 2
+    },
+    "strict_hate_view_mapping": {
+        "normal": 0,
+        "abuse": 0,
+        "hate": 1
+    },
+    "computed_class_weights": {
+        "three_class_label_id": {
+            "0": 0.7724,
+            "1": 0.844,
+            "2": 1.9212
+        },
+        "strict_binary_hate": {
+            "0": 0.605,
+            "1": 2.8818
+        }
+    },
+    "final_duplicate_texts": 0,
+    "final_duplicate_ids": 0
+}

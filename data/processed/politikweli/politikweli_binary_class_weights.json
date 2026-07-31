@@ -1,0 +1,14 @@
+{
+    "task": "Binary misinformation classification",
+    "target_column": "is_misinfo",
+    "class_definition": {
+        "0": "Non-Misinformation (neutral + fact)",
+        "1": "Misinformation (fake)"
+    },
+    "calculated_from": "Training set only",
+    "random_state": 42,
+    "class_weights": {
+        "0": 0.588863,
+        "1": 3.313333
+    }
+}

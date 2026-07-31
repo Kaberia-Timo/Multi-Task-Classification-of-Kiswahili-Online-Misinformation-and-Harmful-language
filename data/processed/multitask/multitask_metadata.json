@@ -1,0 +1,47 @@
+{
+    "random_state": 42,
+    "split_ratios": {
+        "train": 0.8,
+        "validation": 0.1,
+        "test": 0.1
+    },
+    "politikweli_splits": {
+        "train": "frozen_existing_split",
+        "validation": "frozen_existing_split",
+        "test": "frozen_existing_split"
+    },
+    "afrihate_split_method": {
+        "method": "stratified_train_test_split",
+        "stratification_column": "hate_label",
+        "random_state": 42
+    },
+    "label_mappings": {
+        "politikweli": {
+            "neutral": 0,
+            "fact": 0,
+            "fake": 1
+        },
+        "afrihate": {
+            "normal": 0,
+            "abuse": 1,
+            "hate": 2
+        }
+    },
+    "multi_task_masks": {
+        "politikweli": {
+            "misinfo_mask": 1,
+            "hate_mask": 0
+        },
+        "afrihate": {
+            "misinfo_mask": 0,
+            "hate_mask": 1
+        }
+    },
+    "output_files": {
+        "train": "/content/drive/MyDrive/PolitikWeli_Data/multitask_train.csv",
+        "validation": "/content/drive/MyDrive/PolitikWeli_Data/multitask_val.csv",
+        "test": "/content/drive/MyDrive/PolitikWeli_Data/multitask_test.csv",
+        "audit": "/content/drive/MyDrive/PolitikWeli_Data/multitask_dataset_audit.json",
+        "class_weights": "/content/drive/MyDrive/PolitikWeli_Data/multitask_class_weights.json"
+    }
+}

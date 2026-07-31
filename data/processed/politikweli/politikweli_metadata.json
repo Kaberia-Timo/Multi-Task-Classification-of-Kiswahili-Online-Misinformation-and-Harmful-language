@@ -1,0 +1,39 @@
+{
+    "dataset": "Politikweli Harmonized Master Dataset",
+    "input_file": "politikweli_harmonized_master.csv",
+    "total_records": 5592,
+    "split_strategy": "80/10/10 stratified split",
+    "train_percentage": 80.0,
+    "validation_percentage": 10.0,
+    "test_percentage": 10.0,
+    "stratification_variable": "label",
+    "stratification_classes": [
+        "neutral",
+        "fact",
+        "fake"
+    ],
+    "binary_target": "is_misinfo",
+    "binary_target_mapping": {
+        "neutral": 0,
+        "fact": 0,
+        "fake": 1
+    },
+    "random_state": 42,
+    "duplicate_text_check": "Passed",
+    "duplicate_id_check": "Passed",
+    "id_leakage_check": "Passed",
+    "exact_text_leakage_check": "Passed",
+    "split_files": {
+        "train": "politikweli_train.csv",
+        "validation": "politikweli_val.csv",
+        "test": "politikweli_test.csv"
+    },
+    "created_at_utc": "2026-07-29T11:02:57.861482+00:00",
+    "notes": [
+        "These are the frozen Politikweli misinformation splits.",
+        "The dataset is not yet the final multi-label study dataset.",
+        "AfriHate will be integrated in a later phase to create the is_hate_speech target.",
+        "The final multi-label dataset will use independent is_misinfo and is_hate_speech outputs.",
+        "No composite stratification by language subset was used because the smallest subset-label group was too small for reliable three-way stratification."
+    ]
+}

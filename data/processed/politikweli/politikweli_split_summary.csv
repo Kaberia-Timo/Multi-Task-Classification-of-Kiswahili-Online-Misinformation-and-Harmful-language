@@ -1,0 +1,5 @@
+Split,Total Samples,Neutral Count,Neutral (%),Fact Count,Fact (%),Fake Count,Fake (%),Non-Misinformation Count,Non-Misinformation (%),Misinformation Count,Misinformation (%),Swa-Eng Code-Switched,Swa-Only
+Full Master,5592,3677,65.75,1071,19.15,844,15.09,4748,84.91,844,15.09,5430,162
+Train,4473,2941,65.75,857,19.16,675,15.09,3798,84.91,675,15.09,4351,122
+Validation,559,368,65.83,107,19.14,84,15.03,475,84.97,84,15.03,538,21
+Test,560,368,65.71,107,19.11,85,15.18,475,84.82,85,15.18,541,19
